@@ -1,6 +1,12 @@
 import "@/app/ui/global.css";
 import { Inter } from "next/font/google";
-export const inter = Inter({ subsets: ["latin"] }); 
+
+const inter = Inter({ subsets: ["latin"] }); // Removed the export
+
+export const metadata = {
+  title: "Your App",
+  description: "A modern dashboard application",
+};
 
 export default function RootLayout({
   children,
